@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360.4 435.9" width="360.4" height="435.9">
+  <!-- Contour de la goutte ajusté à la taille du viewBox -->
+  <path d="M180.2 0C220 90 320 200 320 300 320 400 270 435.9 180.2 435.9 90 435.9 40 400 40 300 40 200 140 90 180.2 0Z" fill="#6fc6ff" stroke="#2b8cc7" stroke-width="10"/>
+  
+  <!-- Ombre intérieure -->
+  <path d="M150 300Q160 270 200 250" stroke="#3c91c7" stroke-width="10" fill="none"/>
+</svg>

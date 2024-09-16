@@ -1,0 +1,186 @@
+:root {
+    --brown: #e4d8cb;
+}
+
+body {
+    background-color: var(--brown);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    overflow-x: hidden;
+}
+
+.content {
+    margin: 2% 2% 2% 2%;
+}
+
+.content ul {
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.content li {
+    width: 25vw;
+    height: 25vw;
+    position: relative;
+    margin: 5px 5px 5px 5px;
+
+}
+
+.content h2 {
+    font-size: 4vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(122, 165, 129, 1);
+    text-align: center;
+    font-weight: bold;
+    z-index: 2;
+    font-weight: bold;
+    -webkit-text-fill-color: var(--brown);
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: rosybrown;
+}
+
+.filtre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 25vw;
+    background-color: rgba(122, 165, 129, 1);
+    opacity: 0.4;
+    z-index: 1.5;
+    animation-fill-mode: forwards;
+}
+
+.content img {
+    width: 25vw;
+    height: 25vw;
+}
+
+/* .filtre:hover {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 25vw;
+    height: 0vw;
+    transition: 2s;
+} */
+
+.filtre:hover {
+    animation: grow-box 1.5s ease-in-out 0s infinite;
+    /* Animation se déclenche sur hover */
+}
+
+/* Définition de l'animation */
+@keyframes grow-box {
+    0% {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 25vw;
+        height: 25vw;
+    }
+
+    100% {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        width: 25vw;
+        height: 0vw;
+    }
+}
+
+/* 
+S >= 576px
+M >= 768px
+L >= 992px
+XL >= 1200px 
+XXL >= 1400px
+*/
+
+
+@media screen and (max-width: 992px) {
+    .presentation img {
+        width: 100%;
+        height: auto;
+    }
+    .presentation {
+        position: relative;
+    }
+    .presentation h1 {
+        font-size: 7vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(122, 165, 129, 1);
+        text-align: center;
+        font-weight: bold;
+        z-index: 2;
+        font-weight: bold;
+        -webkit-text-fill-color: var(--brown);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color:  rosybrown;
+    }
+}
+
+.plante {
+    margin: 2vw 3vw 2vw 3vw;
+}
+
+.plantation {
+    width: 100%;
+    height: 40vw;
+    background-image: url(./assets/fomre_vert.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.plantation img {
+    width: 35%;
+    height: auto;
+    object-fit: cover;
+    max-width: none;
+    position: absolute;
+    top: 6%;
+    left: 10%;
+}
+
+.description {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 35vw;
+    height: 25vw;
+    display: flex;
+    align-items: center;
+}
+
+.description li {
+    font-size: 2.5vw;
+    list-style: url('./assets/fleur.png');
+}
+
+.deco {
+    position: relative;
+    width: 100%;
+    height: 28vw;
+    margin-top: 3%;
+}
+
+.deco img{
+    position: absolute;
+    right: 2%;
+    top: auto;
+    width: 25vw;
+    height: auto;
+
+}
