@@ -24,10 +24,10 @@ body {
 
 
 .content li {
-    width: 25vw;
-    height: 25vw;
+    width: 30vw;
+    height: 30vw;
     position: relative;
-    margin: 5px 5px 5px 5px;
+    margin: 8px 8px 8px 8px;
 
 }
 
@@ -52,8 +52,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 25vw;
-    height: 25vw;
+    width: 30vw;
+    height: 30vw;
     background-color: rgba(122, 165, 129, 1);
     opacity: 0.4;
     z-index: 1.5;
@@ -61,8 +61,8 @@ body {
 }
 
 .content img {
-    width: 25vw;
-    height: 25vw;
+    width: 30vw;
+    height: 30vw;
 }
 
 /* .filtre:hover {
@@ -85,15 +85,15 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 25vw;
-        height: 25vw;
+        width: 30vw;
+        height: 30vw;
     }
 
     100% {
         position: absolute;
         top: 0%;
         left: 50%;
-        width: 25vw;
+        width: 30vw;
         height: 0vw;
     }
 }
@@ -105,6 +105,13 @@ L >= 992px
 XL >= 1200px 
 XXL >= 1400px
 */
+
+.fixed {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 3;
+}
 
 
 @media screen and (max-width: 992px) {
@@ -183,4 +190,9 @@ XXL >= 1400px
     width: 25vw;
     height: auto;
 
+}
+
+#saison{
+    font-size: 5vw;
+    margin-left: 10vw;
 }
