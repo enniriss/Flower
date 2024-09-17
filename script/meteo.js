@@ -62,7 +62,7 @@ async function changeHTML(coldest, hotest, bloom, bloomConsigne, beforeBloom) {
 
     }
      else {
-        action.src = '../assets/arroser.png';
+        action.src = '../assets/bloom.png';
 
         saison.textContent = "Il fait bon.";
     }

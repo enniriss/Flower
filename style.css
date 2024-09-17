@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Lady Nature';
+    src: url('../police/Lady Nature Font by 7NTypes Italic.otf') format('opentype'),
+         url('../police/Lady Nature Font by 7NTypes.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 :root {
     --brown: #e4d8cb;
 }
@@ -143,6 +152,12 @@ XXL >= 1400px
     margin: 2vw 3vw 2vw 3vw;
 }
 
+.plante h2 {
+    text-align: center;
+    font-size: 10vw;
+    font-family: 'Lady Nature';
+}
+
 .plantation {
     width: 100%;
     height: 40vw;
@@ -152,13 +167,13 @@ XXL >= 1400px
     position: relative;
 }
 .plantation img {
-    width: 35%;
-    height: auto;
+    width: auto;
+    height: 70%;
     object-fit: cover;
     max-width: none;
     position: absolute;
-    top: 6%;
-    left: 10%;
+    top: 9%;
+    left: 13%;
 }
 
 .description {
@@ -172,22 +187,26 @@ XXL >= 1400px
 }
 
 .description li {
-    font-size: 2.5vw;
+    font-size: 3vw;
     list-style: url('./assets/fleur.png');
 }
 
+
 .deco {
-    position: relative;
-    width: 100%;
-    height: 28vw;
-    margin-top: 3%;
+    position: absolute;
+    right: 2%;
+    bottom: 0%;
+    width: 25vw;
+    height: auto;
+
 }
 
 .deco img{
     position: absolute;
     right: 2%;
-    top: auto;
+    bottom: 0%;
     width: 25vw;
     height: auto;
 
 }
+
