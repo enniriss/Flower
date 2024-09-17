@@ -49,12 +49,17 @@ async function changeHTML(coldest, hotest, bloom, bloomConsigne, beforeBloom) {
     const action = document.getElementById('action');
     // Changer le texte en fonction de la température
     if (weather.température > hotest) {
-        action.src = '../assets/bache.png';
-        saison.textContent = 'Il faut rajouter du paillage ou une bâche.';
+        action.src = '../assets/arroser.png';
+
+        saison.textContent = "Il faut rafraichir la zone.";
+
         
     } else if (weather.température < coldest) {
-        action.src = '../assets/arroser.png';
-        saison.textContent = "Il faut rafraichir la zone.";
+
+        action.src = '../assets/bache.png';
+
+        saison.textContent = 'Il faut rajouter du paillage ou une bâche.';
+
     }
      else {
         action.src = '../assets/arroser.png';
