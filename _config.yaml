@@ -11,7 +11,7 @@ url: "https://enniriss.github.io/Flower/"
 
 # Si ton site est hébergé dans un sous-répertoire, indique ici le nom du dépôt
 # Exemple: /ton-repo si ton site est hébergé sur https://ton-nom.github.io/ton-repo/
-baseurl: "/Flower"
+baseurl: ""
 
 # Auteur du site (ton nom)
 author: "SissiK"
