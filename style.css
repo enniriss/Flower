@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Lady Nature';
-    src: url('../police/Lady Nature Font by 7NTypes Italic.otf') format('opentype'),
-         url('../police/Lady Nature Font by 7NTypes.otf') format('opentype');
+    src: url('../police/Lady-Nature-Font-by-7NTypes-Italic.woff') format('woff'),
+         url('../police/Lady-Nature-Font-by-7NTypes.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
