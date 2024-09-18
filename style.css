@@ -1,7 +1,9 @@
 @font-face {
     font-family: 'Lady Nature';
-    src: url('../police/Lady-Nature-Font-by-7NTypes.woff2') format('woff2'),
-         url('../police/Lady-Nature-Font-by-7NTypes-Italic.woff2') format('woff2');
+    src: url('./police/LadyNature.woff') format('woff'),
+         url('./police/LadyNatureItalic.woff') format('woff'),
+         url('./police/LadyNature.woff2') format('woff2'),
+         url('./police/LadyNatureItalic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
