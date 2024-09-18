@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Lady Nature';
-    src: url('../police/Lady Nature Font by 7NTypes Italic.otf') format('opentype'),
-         url('../police/Lady Nature Font by 7NTypes.otf') format('opentype');
+    src: url('https://github.com/enniriss/Flower/blob/main/police/Lady%20Nature%20Font%20by%207NTypes%20Italic.otf') format('opentype'),
+         url('https://github.com/enniriss/Flower/blob/main/police/Lady%20Nature%20Font%20by%207NTypes.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
