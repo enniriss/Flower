@@ -51,10 +51,9 @@
             <img src="" id="action" alt="">
             <div class="description">
                 
-                <ul>
+                <ul id="season">
                     <li>
                 <h3 id="saison"></h3></li>
-                <br>
 
                 <li >  <h3 id="temperature"> </h3></li>
                 </ul>
@@ -77,8 +76,8 @@
         const beforeBloom = [
             "Arroser une à deux fois par semaine"
         ]
-
-        changeHTML(-5, 20, bloom, bloomConsigne, beforeBloom);
+        const graine = [9];
+        changeHTML(-5, 20, bloom, bloomConsigne, beforeBloom, graine);
 
         // console.log(date.getMonth() + 1);
 

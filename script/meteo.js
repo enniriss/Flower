@@ -19,17 +19,13 @@ async function getWeather() {
 
 // Appelle la fonction avec le nom de la ville que tu souhaites
 
-async function changeHTML(coldest, hotest, bloom, bloomConsigne, beforeBloom) {
+async function changeHTML(coldest, hotest, bloom, bloomConsigne, beforeBloom, graine) {
     const weather = await getWeather();    
-
     document.getElementById('temperature').textContent = `${weather.température}°C`;
-    
-    const consignes =  document.getElementById('consignes')
 
-    
+    const consignes =  document.getElementById('consignes')
     const currentMonth = new Date().getMonth() + 1;
      
-    
 
     if (bloom.includes(currentMonth)) {
 
@@ -45,6 +41,7 @@ async function changeHTML(coldest, hotest, bloom, bloomConsigne, beforeBloom) {
             consignes.appendChild(nouvelElement);
         });
     }
+
     const saison = document.getElementById('saison');
     const action = document.getElementById('action');
     // Changer le texte en fonction de la température
@@ -60,16 +57,19 @@ async function changeHTML(coldest, hotest, bloom, bloomConsigne, beforeBloom) {
 
         saison.textContent = 'Il faut rajouter du paillage ou une bâche.';
 
-    }
-     else {
+    } else {
         action.src = '../assets/bloom.png';
 
         saison.textContent = "Il fait bon.";
     }
-    
-    // Modifier le contenu en fonction de la description du temps
-    if (weather.temps.includes('cloudy')) {
-        document.getElementById('description').textContent += " - C'est nuageux.";
+
+    if (graine.includes(currentMonth)) {
+        const season = document.getElementById('season');
+        const graineTitle = document.createElement('li');
+        const graineTime = document.createElement('h3');
+        graineTime.textContent = 'Période de plantation.';
+        graineTitle.appendChild(graineTime);
+        season.appendChild(graineTitle);
     }
 
 }
