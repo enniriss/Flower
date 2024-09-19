@@ -140,14 +140,15 @@ XXL >= 1400px
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: rgba(122, 165, 129, 1);
+        color: var(--brown);
         text-align: center;
-        font-weight: bold;
         z-index: 2;
-        font-weight: bold;
-        -webkit-text-fill-color: var(--brown);
-        -webkit-text-stroke-width: 0.01px;
-        -webkit-text-stroke-color:  rosybrown;
+        text-shadow: 
+                4px 4px 0px rosybrown, 
+                -4px 4px 0px rosybrown, 
+                4px -4px 0px rosybrown, 
+                -4px -4px 0px rosybrown;
+        
     }
 }
 
@@ -156,6 +157,11 @@ XXL >= 1400px
 }
 
 .plante h2 {
+    text-shadow: 
+                2px 2px 0px rosybrown, 
+                -2px 2px 0px rosybrown, 
+                2px -2px 0px rosybrown, 
+                -2px -2px 0px rosybrown;
     text-align: center;
     font-size: 10vw;
     font-family: 'Lady Nature';
