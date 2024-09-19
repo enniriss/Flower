@@ -13,18 +13,20 @@
 <body>
     <div class="fixed">
     <div class="presentation">
-        <img src="../assets/cyclamen_long.jpg" alt="">
-        <h1>Cyclamen Mini</h1>
+        <img src="../assets/rose_long.jpg" alt="">
+        <h1>Rose</h1>
     </div>
     </div>
+
     <div class="plante">
     <hr>
+
         <h2>Plantation</h2>
         <div class="plantation">
             <img src="../assets/planter.png" id="plantation" ="">
             <div class="description">
                 <ul>
-                    <li>A planter dans un endroit à mi-ombre</li>
+                    <li>A planter à mi-ombre</li>
                 </ul>
             </div>
         </div>
@@ -36,7 +38,6 @@
             <img src="../assets/entretien2.png" alt="">
             <div class="description">
                 <ul id="consignes">
-                    <li>Couper les fleurs fanées</li>
                 </ul>
             </div>
         </div>
@@ -64,16 +65,19 @@
     <script src="../script/meteo.js"></script>
     <script>
         // const bloomPeriod = ['']
-        
-        const bloom = [8, 9, 10, 11];
+        // Bloom period
+        const bloom = [5,6];
         const bloomConsigne = [
-            "Arroser rarement", "Pas sur le feuillage ni sur la fleur",
+            "Couper les fleurs et les feuilles fanées",
+            "Arroser 2 fois par mois",
+            "Pailler le sol"
         ]
         const beforeBloom = [
-            "Arroser une à deux fois par semaine"
+            "Ne pas arroser", "Ne pas tailler en hiver", "Tailler au printemps et automne"
         ]
+        // Période à planter
         const graine = [];
-        changeHTML(-5, 20, bloom, bloomConsigne, beforeBloom, graine);
+        changeHTML(-15, 50, bloom, bloomConsigne, beforeBloom, graine);
 
         // console.log(date.getMonth() + 1);
 
