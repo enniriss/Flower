@@ -135,10 +135,10 @@ XXL >= 1400px
         text-align: center;
         z-index: 2;
         text-shadow: 
-                4px 4px 0px rosybrown, 
-                -4px 4px 0px rosybrown, 
-                4px -4px 0px rosybrown, 
-                -4px -4px 0px rosybrown;
+                2px 2px 0px rosybrown, 
+                -2px 2px 0px rosybrown, 
+                2px -2px 0px rosybrown, 
+                -2px -2px 0px rosybrown;
         
     }
 }
