@@ -43,19 +43,20 @@ body {
 }
 
 .content h2 {
-    font-size: 4vw;
+    font-size: 6vw;
+    font-family: 'Lady Nature';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgba(122, 165, 129, 1);
+    color: rosybrown;
     text-align: center;
     font-weight: bold;
     z-index: 2;
     font-weight: bold;
-    -webkit-text-fill-color: var(--brown);
-    -webkit-text-stroke-width: 0.15vw;
-    -webkit-text-stroke-color: rosybrown;
+    -webkit-text-fill-color:rosybrown ;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: var(--brown);
 }
 
 .filtre {
