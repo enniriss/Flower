@@ -1,6 +1,6 @@
 // Fonction pour obtenir la météo
 async function getWeather() {
-    const apiUrl = `https://api.weatherbit.io/v2.0/current?lat=48.82642500591707&lon=2.229354452274757&include=alerts&postal_code=92310&country=FR&key=12eb724c74194c0abb3c2aa053922486`;
+    const apiUrl = `https://api.weatherbit.io/v2.0/current?lat=48.82642500591707&lon=2.229354452274757&include=alerts&postal_code=92310&country=FR&key=0e1e60503fa24c2eb06774f153f3c271`;
 
     const datas = await fetch(apiUrl).then(
         response => {
